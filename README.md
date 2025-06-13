@@ -19,10 +19,14 @@ That said, no one can really burn much money with it anyway — it’s just runn
 2. **Edit the system prompt:**
 
    * Modify the contents of `system_prompt.txt` as needed.
+  
+3. **Add your Gemeni API Key:**
 
-3. **Update contact information** on the site (e.g., footer, contact section).
+   * Rename `example.env` to `.env` and add your google gemini API Key.
 
-4. **Run the server:**
+4. **Update contact information** on the site (e.g., footer, contact section).
+
+5. **Run the server:**
 
    ```
    python server.py
