@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Auto Quoter</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" href="https://i.ibb.co/Cw2tz0c/eagle.jpg">
+	<meta content="Contacts" property="og:title" />
+	<meta content="LiteEagle262 Contact information, and storage" property="og:description" />
+	<meta content="https://liteeagle.me/" property="og:url" />
+	<meta content="https://i.ibb.co/Cw2tz0c/eagle.jpg" property="og:image" />
+	<meta content="#6d00c1" data-react-helmet="true" name="theme-color" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>Eagle Auto Quoter</h1>
+            </div>
+            <p class="subtitle">Get instant quotes for your development projects</p>
+			<p class="subtitle">Please note that this is an AI. Quotes and responses may not be accurate.</p>
+        </header>
+
+        <!-- Project Queue section - not using rn -->
+        <!-- 
+        <div class="queue-section">
+            <div class="queue-info">
+                <span class="queue-label">Current Project Queue:</span>
+                <span class="queue-number" id="queueNumber">Loading...</span>
+            </div>
+        </div>
+        -->
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar bot-avatar">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKwg-DhJBbyogv0C2H5ZN5sZ-vhuGTmtrq7Q&s" alt="AI Assistant" class="avatar-img">
+                    </div>
+                    <div class="message-content">
+                        <div class="message-text">
+                            Hello! I'm Bob, Eagle's AI assistant. I can provide quick estimates for custom software and web development projects. 
+                            Tell me about your project and I'll give you an instant quote and lyk if Eagle can do it!
+                        </div>
+                        <div class="message-time">Just now</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <textarea id="messageInput" placeholder="Describe your development project..." maxlength="500" rows="2"></textarea>
+                    <button id="sendButton" class="send-button">
+                        <span class="send-icon">➤</span>
+                    </button>
+                </div>
+                <div class="input-info">
+                    <span class="typing-indicator" id="typingIndicator" style="display: none;">
+                        <span></span><span></span><span></span>
+                    </span>
+                    <div class="rate-limit-warning" id="rateLimitWarning" style="display: none;">
+                        Rate limit exceeded. Please wait before sending another message.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-text">Ready to get started? Contact Eagle:</div>
+            <div class="contact-buttons">
+                <button class="contact-btn discord-btn" id="discordBtn" title="Discord">
+                    <span class="contact-icon"><i class="fa-brands fa-discord"></i></span>
+                </button>
+                <button class="contact-btn telegram-btn" id="telegramBtn" title="Telegram">
+                    <span class="contact-icon"><i class="fa-brands fa-telegram"></i></span>
+                </button>
+                <button class="contact-btn ogu-btn" id="oguBtn" title="OGUsers">
+                    <span class="contact-icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                </button>
+            </div>
+            <div class="tooltip" id="tooltip">Copied Username to clipboard!</div>
+        </div>
+
+        <footer class="footer">
+            <p>liteeagle.me</p>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html> 
