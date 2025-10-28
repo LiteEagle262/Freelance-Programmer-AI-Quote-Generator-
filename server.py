@@ -63,7 +63,7 @@ async def chat(request: Request, body: ChatMessage):
         with open('system_prompt.txt', 'r', encoding='utf-8') as f:
             system_prompt = f.read().strip()
             
-        model = genai.GenerativeModel('gemini-1.5-flash-latest')
+        model = genai.GenerativeModel('gemini-2.5-flash-lite')
             
         full_prompt = f"{system_prompt}\n\nUser request: {body.message}"
             
@@ -89,4 +89,5 @@ async def get_script():
     return FileResponse("script.js")
 
 if __name__ == "__main__":
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
